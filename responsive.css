@@ -87,7 +87,7 @@
     }
 
     .hero-footer {
-        top: 6rem;
+        top: 7rem;
         width: 100vw;
         position: relative;
         padding: 0 5vw;
@@ -169,14 +169,14 @@
     }
 
     .leetcode {
-        height: 70vw;
+        height: 68vw;
         color: #fff;
         background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: start;
-        top: 165vw;
+        top: 155vw;
         position: relative;
     }
 
@@ -199,10 +199,97 @@
         font-size: 18px;
     }
 
-    .footer .footer-left h5{
+    .footer .footer-left h5 {
         position: relative;
         left: -4rem;
-        margin-top:3vw;
-        font-size:5vw;
+        margin-top: 3vw;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .leetcode {
+        height: 50vw;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        top: 120vw;
+        position: relative;
+    }
+
+    .footer .footer-left h5 {
+        position: relative;
+        left: -5rem;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width:398px) {
+    .leetcode {
+        height: 85vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        top: 155vw;
+        position: relative;
+    }
+
+    .footer .footer-left h5 {
+        position: relative;
+        left: -4.7rem;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+
+    .leetcode-text {
+        padding: 50px 15px;
+    }
+}
+
+@media screen and (min-height:1550px) {
+    .footer .footer-left h5 {
+        left: -5rem;
+    }
+
+    .leetcode {
+        height: 65vw;
+        color: #fff;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        top: 130vw;
+        position: relative;
+    }
+
+    .leetcode-text {
+        padding: 2px 13px;
+    }
+
+    .footer .footer-right {
+        width: 78vw;
+        justify-content: space-between;
+    }
+
+    .footer .footer-left h5 {
+        position: relative;
+        left: -5.1rem;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+
+    .hero-footer {
+        top: 12rem;
+        width: 100vw;
+        position: relative;
+        padding: 0 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
