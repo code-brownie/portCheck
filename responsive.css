@@ -87,7 +87,7 @@
     }
 
     .hero-footer {
-        top: 7rem;
+        top: 15rem;
         width: 100vw;
         position: relative;
         padding: 0 5vw;
@@ -169,14 +169,14 @@
     }
 
     .leetcode {
-        height: 68vw;
+        height: 50vw;
         color: #fff;
         background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: start;
-        top: 155vw;
+        top: 100vw;
         position: relative;
     }
 
@@ -191,7 +191,7 @@
     }
 
     .footer .footer-right {
-        width: 85vw;
+        width: 80vw;
         justify-content: space-between;
     }
 
@@ -201,13 +201,13 @@
 
     .footer .footer-left h5 {
         position: relative;
-        left: -4rem;
+        left: -5.5rem;
         margin-top: 3vw;
         font-size: 5vw;
     }
 }
 
-@media only screen and (max-width:400px) {
+/* @media only screen and (max-width:400px) {
     .leetcode {
         height: 50vw;
         background-color: black;
@@ -249,8 +249,8 @@
         padding: 50px 15px;
     }
 }
-
-@media screen and (min-height:1550px) {
+ */
+/* @media screen and (min-height:1550px) {
     .footer .footer-left h5 {
         left: -5rem;
     }
@@ -293,3 +293,4 @@
         justify-content: space-between;
     }
 }
+ */
