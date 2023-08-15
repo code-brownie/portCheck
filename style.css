@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+*::selection {
+    color: #000000;
+    background: #ffffffa1;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    /* z-index: 100000; */
+
+
+}
+
+.bounding {
+    overflow: hidden;
+    width: fit-content;
+    /* background-color: red; */
+}
+
+.bounding .bounding_elem {
+    transform: translateY(100%);
+}
+
+.mini-circle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 21;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    user-select: none;
+    transform: scale(500);
+}
+
+
+
+.hero {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 78vh;
+    background-color: black;
+    /* pointer-events: none; */
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 20;
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.s2 {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 10px;
+    /* margin-top: 10px; */
+    position: relative;
+    bottom: 27px;
+    cursor: pointer;
+
+}
+
+.s {
+    overflow: hidden;
+    width: fit-content;
+    height: 27px;
+    /* cursor: pointer; */
+    /* position: relative; */
+}
+
+.b {
+    display: inline-block;
+    position: relative;
+    bottom: 27px;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.b::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.b:hover::after {
+    width: 100%;
+}
+
+#heading {
+    margin-top: 90px;
+}
+
+#heading h1 {
+    margin-left: 30px;
+    font-family: "General Sans Medium";
+    line-height: 1;
+    opacity: 0.6;
+    font-size: 9vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+#heading #second-h1 {
+    margin-left: 180px;
+}
+
+.blockText {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    /* background-color: red; */
+}
+
+.blockText h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+}
+
+.small-heading {
+    margin-top: 100px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.small-heading h5 {
+    margin-top: 0.5px;
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.hero-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 10000; */
+}
+
+.hero-footer a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero-footer .circle {
+    overflow: hidden;
+}
+
+
+.hero-footer a ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.7s;
+
+}
+
+.hero-footer a:hover ::after {
+    width: 100%;
+}
+
+.hero-footer .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+.hero-footer #iconset {
+    display: flex;
+    gap: 5px;
+}
+
+/* hero ends here */
+
+/* second begin here */
+
+.second {
+    color: #fff;
+    background-color: black;
+    width: 100%;
+
+}
+
+.second {
+    margin: 10% 10rem 10% 2rem;
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+    cursor: none;
+}
+
+
+.elem img {
+    height: 20rem;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 8vw;
+    opacity: 0.7;
+    transition: all 0.8s ease;
+    cursor: none;
+}
+
+.elem h1:hover {
+    transform: translateX(12%);
+    opacity: 20%;
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+
+/* About */
+
+.profile {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    width: 52rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+    line-height: 1.5rem;
+}
+
+
+#about h1 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+#about p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#about button {
+    background: none;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 1rem 0%;
+    background-color: white;
+    color: #000;
+}
+
+#about button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+#about img {
+    width: 15rem;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.leetcode {
+    height: 25vw;
+    color: #fff;
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: start; */
+}
+
+.leetcode-text {
+    padding: 5px 30px;
+}
+
+.leetcode h5 {
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+.leetcode h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.leetcode h3 ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.leetcode h3:hover ::after {
+    width: 100%;
+
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    color: white;
+    font-size: 18px;
+
+}
+
+.footer a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-left {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer .footer-right a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.footer a:hover::after {
+    width: 100%;
+}
+
+.preloader {
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 0%, 0%);
+    overflow: hidden;
+    /* border-bottom:1px solid #888888; */
+}
+
+
+.preloader video {
+    width: inherit;
+    height: inherit;
+}
+
+/* for view text */
+
+.elem .view-text {
+    position: absolute;
+    z-index: 10000;
+    bottom: 51%;
+    left: 0%;
+    cursor: none;
+    color: #000;
+    pointer-events: none;
+}
+
+.view-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.elem:hover .view-text {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.799);
+    padding: 38px 30px;
+    font-family: "General Sans";
+    font-weight: 800;
+}
